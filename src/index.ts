@@ -3,6 +3,8 @@ import fs from "fs";
 import {exec} from "child_process";
 
 interface Application {
+    type: "apkpure" | "direct";
+    url?: string;
     sigbypasslv: 0 | 1 | 2;
     manager: boolean;
     // Not working yet
@@ -57,7 +59,9 @@ const client = got.extend({
 });
 
 for (const [key, value] of Object.entries(config.applications)) {
-    const response = await client.get(`https://d.apkpure.com/b/APK/${key}?version=latest`).buffer();
+    console.log(`Downloading ${key}`);
+
+    const response = await client.get(value.type === "apkpure" ? `https://d.apkpure.com/b/APK/${key}?version=latest` : value.url!).buffer();
 
     const name = `${key}.apk`;
     fs.writeFileSync(name, response);

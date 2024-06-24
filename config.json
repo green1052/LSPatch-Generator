@@ -1,13 +1,30 @@
 {
     "embeds": {
-        "Chromext": "embeds/ChromeXt-signed.apk"
+        "Chromext": "embeds/ChromeXt-signed.apk",
+        "DisableFlagSecure": "embeds/DisableFlagSecure.apk"
     },
     "applications": {
         "com.novelpia.android.me": {
+            "type": "apkpure",
             "sigbypasslv": 0,
             "manager": false,
             "allowdown": false,
-            "embeds": ["Chromext"]
+            "embeds": ["Chromext", "DisableFlagSecure"]
+        },
+        "com.taobao.taobao": {
+            "type": "apkpure",
+            "sigbypasslv": 0,
+            "manager": true,
+            "allowdown": false,
+            "embeds": []
+        },
+        "live.arca.android": {
+            "type": "direct",
+            "url": "https://artifact.arca.live/app-v2-61.apk",
+            "sigbypasslv": 0,
+            "manager": true,
+            "allowdown": false,
+            "embeds": []
         }
     }
 }
