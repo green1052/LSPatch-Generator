@@ -1,0 +1,13 @@
+{
+    "embeds": {
+        "Chromext": "embeds/ChromeXt-signed.apk"
+    },
+    "applications": {
+        "com.novelpia.android.me": {
+            "sigbypasslv": 0,
+            "manager": false,
+            "allowdown": false,
+            "embeds": ["Chromext"]
+        }
+    }
+}
