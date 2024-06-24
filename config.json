@@ -7,7 +7,7 @@
         "com.novelpia.android.me": {
             "type": "apkpure",
             "sigbypasslv": 0,
-            "manager": false,
+            "manager": true,
             "allowdown": false,
             "embeds": ["Chromext", "DisableFlagSecure"]
         },
