@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  release:
+  run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,10 +27,11 @@ jobs:
 
       - name: Build
         run: |
-          pnpm run build
+          pnpm run start
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.run_number }}
           files: |
             output/*
