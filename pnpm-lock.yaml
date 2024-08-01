@@ -12,7 +12,7 @@ importers:
         specifier: 1.0.0-rc.12
         version: 1.0.0-rc.12
       got:
-        specifier: ^14.4.1
+        specifier: ^14.4.2
         version: 14.4.2
     devDependencies:
       '@types/node':
