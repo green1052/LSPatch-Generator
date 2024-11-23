@@ -13,7 +13,7 @@
   "type": "module",
   "packageManager": "pnpm@9.14.2",
   "devDependencies": {
-    "@types/node": "^22.9.1",
+    "@types/node": "^22.9.2",
     "typescript": "^5.7.2"
   },
   "dependencies": {
