@@ -20,8 +20,8 @@
         },
         "live.arca.android": {
             "type": "direct",
-            "url": "https://artifact.arca.live/app-v2-61.apk",
-            "sigbypasslv": 0,
+            "url": "https://arcalive.green1052.workers.dev/",
+            "sigbypasslv": 2,
             "manager": true,
             "allowdown": false,
             "embeds": []
