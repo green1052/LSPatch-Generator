@@ -9,7 +9,7 @@
             "sigbypasslv": 0,
             "manager": true,
             "allowdown": false,
-            "embeds": ["Chromext", "DisableFlagSecure"]
+            "embeds": []
         },
         "com.taobao.taobao": {
             "type": "apkpure",
