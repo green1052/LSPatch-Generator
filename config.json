@@ -20,7 +20,7 @@
         },
         "live.arca.android": {
             "type": "direct",
-            "url": "https://arcalive.green1052.workers.dev/",
+            "url": "https://arcalive.green1052.workers.dev",
             "sigbypasslv": 2,
             "manager": true,
             "allowdown": false,
