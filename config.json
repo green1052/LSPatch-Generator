@@ -25,6 +25,13 @@
             "manager": true,
             "allowdown": false,
             "embeds": []
-        }
+        },
+        "com.discord": {
+            "type": "apkpure",
+            "sigbypasslv": 0,
+            "manager": true,
+            "allowdown": false,
+            "embeds": []
+        },
     }
 }
