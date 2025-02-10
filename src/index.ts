@@ -68,6 +68,7 @@ for (const [key, value] of Object.entries(config.applications)) {
         fs.writeFileSync(name, response);
     
         patch(name, value);
+    }
     catch (e) {
         console.error(e);
     }
