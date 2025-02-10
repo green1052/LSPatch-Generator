@@ -59,12 +59,16 @@ const client = got.extend({
 });
 
 for (const [key, value] of Object.entries(config.applications)) {
-    console.log(`Downloading ${key}`);
-
-    const response = await client.get(value.type === "apkpure" ? `https://d.apkpure.com/b/APK/${key}?version=latest` : value.url!).buffer();
-
-    const name = `${key}.apk`;
-    fs.writeFileSync(name, response);
-
-    patch(name, value);
+    try {    
+        console.log(`Downloading ${key}`);
+    
+        const response = await client.get(value.type === "apkpure" ? `https://d.apkpure.com/b/APK/${key}?version=latest` : value.url!).buffer();
+    
+        const name = `${key}.apk`;
+        fs.writeFileSync(name, response);
+    
+        patch(name, value);
+    catch (e) {
+        console.error(e);
+    }
 }
