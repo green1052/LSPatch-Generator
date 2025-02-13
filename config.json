@@ -4,6 +4,13 @@
         "DisableFlagSecure": "embeds/DisableFlagSecure.apk"
     },
     "applications": {
+        "com.mathpresso.qanda": {
+            "type": "apkpure",
+            "sigbypasslv": 2,
+            "manager": true,
+            "allowdown": false,
+            "embeds": []
+        }
         "com.novelpia.android.me": {
             "type": "apkpure",
             "sigbypasslv": 0,
