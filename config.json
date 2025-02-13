@@ -10,7 +10,7 @@
             "manager": true,
             "allowdown": false,
             "embeds": []
-        }
+        },
         "com.novelpia.android.me": {
             "type": "apkpure",
             "sigbypasslv": 0,
