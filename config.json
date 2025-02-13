@@ -11,13 +11,6 @@
             "allowdown": false,
             "embeds": []
         },
-        "com.taobao.taobao": {
-            "type": "apkpure",
-            "sigbypasslv": 0,
-            "manager": true,
-            "allowdown": false,
-            "embeds": []
-        },
         "live.arca.android": {
             "type": "direct",
             "url": "https://arcalive.green1052.workers.dev",
