@@ -7,9 +7,6 @@
     "build": "tsc",
     "start": "tsc && node dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "module",
   "packageManager": "pnpm@10.11.0",
   "devDependencies": {
