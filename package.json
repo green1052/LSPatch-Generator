@@ -10,7 +10,7 @@
   "type": "module",
   "packageManager": "pnpm@10.11.0",
   "devDependencies": {
-    "@types/node": "^22.15.23",
+    "@types/node": "^22.15.24",
     "typescript": "^5.8.3"
   },
   "dependencies": {
