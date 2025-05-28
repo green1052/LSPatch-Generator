@@ -16,8 +16,8 @@ importers:
         version: 14.4.7
     devDependencies:
       '@types/node':
-        specifier: ^22.15.21
-        version: 22.15.21
+        specifier: ^22.15.23
+        version: 22.15.23
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -38,8 +38,8 @@ packages:
   '@types/http-cache-semantics@4.0.4':
     resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
 
-  '@types/node@22.15.21':
-    resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
+  '@types/node@22.15.23':
+    resolution: {integrity: sha512-7Ec1zaFPF4RJ0eXu1YT/xgiebqwqoJz8rYPDi/O2BcZ++Wpt0Kq9cl0eg6NN6bYbPnR67ZLo7St5Q3UK0SnARw==}
 
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -212,7 +212,7 @@ snapshots:
 
   '@types/http-cache-semantics@4.0.4': {}
 
-  '@types/node@22.15.21':
+  '@types/node@22.15.23':
     dependencies:
       undici-types: 6.21.0
 
