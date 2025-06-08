@@ -14,7 +14,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "cheerio": "1.0.0",
+    "cheerio": "1.1.0",
     "got": "^14.4.7"
   }
 }
