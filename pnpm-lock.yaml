@@ -12,8 +12,8 @@ importers:
         specifier: 1.1.2
         version: 1.1.2
       got:
-        specifier: ^14.6.2
-        version: 14.6.2
+        specifier: ^14.6.3
+        version: 14.6.3
     devDependencies:
       '@types/node':
         specifier: ^24.10.0
@@ -33,10 +33,6 @@ packages:
   '@sindresorhus/is@7.0.1':
     resolution: {integrity: sha512-QWLl2P+rsCJeofkDNIT3WFmb6NrRud1SUYW8dIhXK/46XFV8Q/g7Bsvib0Askb0reRLe+WYPeeE+l5cH7SlkuQ==}
     engines: {node: '>=18'}
-
-  '@szmarczak/http-timer@5.0.1':
-    resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
-    engines: {node: '>=14.16'}
 
   '@types/http-cache-semantics@4.0.4':
     resolution: {integrity: sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA==}
@@ -77,10 +73,6 @@ packages:
     resolution: {integrity: sha512-oj7KWToJuuxlPr7VV0vabvxEIiqNMo+q0NueIiL3XhtwC6FVOX7Hr1c0C4eD0bmf7Zr+S/dSf2xvkH3Ad6sU3Q==}
     engines: {node: '>=20'}
 
-  defer-to-connect@2.0.1:
-    resolution: {integrity: sha512-4tvttepXG1VaYGrRibk5EwJd1t4udunSOVMdLSAL6mId1ix438oPwPZMALY41FCijukO1L0twNcGsdzS7dHgDg==}
-    engines: {node: '>=10'}
-
   dom-serializer@2.0.0:
     resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
 
@@ -113,8 +105,8 @@ packages:
     resolution: {integrity: sha512-kVCxPF3vQM/N0B1PmoqVUqgHP+EeVjmZSQn+1oCRPxd2P21P2F19lIgbR3HBosbB1PUhOAoctJnfEn2GbN2eZA==}
     engines: {node: '>=18'}
 
-  got@14.6.2:
-    resolution: {integrity: sha512-bnhvxegqufyxHAmzwCZSscjGLVpw6/NzTXOk2tQVu/b9Q9FeMAgLabYulXEQRwP04UYltnkcZwvBq14fsdqvyw==}
+  got@14.6.3:
+    resolution: {integrity: sha512-u1nNamHo7oAkyTkMD7g0F0pIvW6vNAF9CCmtkh8ZQrlToKJZ5wEPQHFqt6RzaZC0rJMzH+rnjIElyTsIkT0wQw==}
     engines: {node: '>=20'}
 
   htmlparser2@10.0.0:
@@ -216,10 +208,6 @@ snapshots:
 
   '@sindresorhus/is@7.0.1': {}
 
-  '@szmarczak/http-timer@5.0.1':
-    dependencies:
-      defer-to-connect: 2.0.1
-
   '@types/http-cache-semantics@4.0.4': {}
 
   '@types/node@24.10.0':
@@ -279,8 +267,6 @@ snapshots:
     dependencies:
       mimic-response: 4.0.0
 
-  defer-to-connect@2.0.1: {}
-
   dom-serializer@2.0.0:
     dependencies:
       domelementtype: 2.3.0
@@ -315,10 +301,9 @@ snapshots:
       '@sec-ant/readable-stream': 0.4.1
       is-stream: 4.0.1
 
-  got@14.6.2:
+  got@14.6.3:
     dependencies:
       '@sindresorhus/is': 7.0.1
-      '@szmarczak/http-timer': 5.0.1
       byte-counter: 0.1.0
       cacheable-lookup: 7.0.0
       cacheable-request: 13.0.12
