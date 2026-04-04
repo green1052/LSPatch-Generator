@@ -1,37 +1,9 @@
 {
-    "embeds": {
-        "Chromext": "embeds/ChromeXt-signed.apk",
-        "DisableFlagSecure": "embeds/DisableFlagSecure.apk"
-    },
+    "embeds": {},
     "applications": {
-        "com.mathpresso.qanda": {
-            "type": "apkpure",
-            "sigbypasslv": 2,
-            "manager": true,
-            "allowdown": false,
-            "embeds": []
-        },
-        "com.novelpia.android.me": {
-            "type": "apkpure",
-            "sigbypasslv": 0,
-            "manager": true,
-            "allowdown": false,
-            "embeds": []
-        },
-        "live.arca.android": {
-            "type": "direct",
-            "url": "https://arcalive.green1052.workers.dev",
-            "sigbypasslv": 2,
-            "manager": true,
-            "allowdown": false,
-            "embeds": []
-        },
         "com.discord": {
             "type": "apkpure",
-            "sigbypasslv": 0,
-            "manager": true,
-            "allowdown": false,
-            "embeds": []
+            "manager": true
         }
     }
 }
