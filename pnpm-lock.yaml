@@ -12,8 +12,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
       got:
-        specifier: ^15.0.0
-        version: 15.0.0
+        specifier: ^15.0.1
+        version: 15.0.1
       p-limit:
         specifier: ^7.3.0
         version: 7.3.0
@@ -112,8 +112,8 @@ packages:
     resolution: {integrity: sha512-kVCxPF3vQM/N0B1PmoqVUqgHP+EeVjmZSQn+1oCRPxd2P21P2F19lIgbR3HBosbB1PUhOAoctJnfEn2GbN2eZA==}
     engines: {node: '>=18'}
 
-  got@15.0.0:
-    resolution: {integrity: sha512-CUqLG9oFZRis7SZq5Bcxh42LpzxXgXwxWVwNljo60oki8Cq3GXVRpDY2K4GwTzYz3htyXf212nfNg2socz4esQ==}
+  got@15.0.1:
+    resolution: {integrity: sha512-InYCBboAj9YmFiMcxbIRQ/WPoLsKSc9t9EGaUjGENtxunnx8USWtRY/SO/V3VsHLfDvUxAO2Qmx+6fQyG1jjaw==}
     engines: {node: '>=22'}
 
   htmlparser2@10.1.0:
@@ -323,7 +323,7 @@ snapshots:
       '@sec-ant/readable-stream': 0.4.1
       is-stream: 4.0.1
 
-  got@15.0.0:
+  got@15.0.1:
     dependencies:
       '@sindresorhus/is': 7.2.0
       byte-counter: 0.1.0
