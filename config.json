@@ -1,8 +1,49 @@
 {
     "embeds": {},
     "applications": {
-        "com.discord": {
-            "type": "apkpure",
+        "com.spotify.music": {
+            "sources": [
+                {
+                    "type": "apkmirror",
+                    "url": "https://www.apkmirror.com/apk/spotify-ab/spotify-music-and-podcasts/"
+                }
+            ],
+            "manager": true
+        },
+        "com.reddit.frontpage": {
+            "sources": [
+                {
+                    "type": "apkmirror",
+                    "url": "https://www.apkmirror.com/apk/redditinc/reddit/"
+                }
+            ],
+            "manager": true
+        },
+        "org.telegram.messenger": {
+            "sources": [
+                {
+                    "type": "uptodown",
+                    "url": "https://telegram.en.uptodown.com/android"
+                }
+            ],
+            "manager": true
+        },
+        "com.snapchat.android": {
+            "sources": [
+                {
+                    "type": "uptodown",
+                    "url": "https://snapchat.en.uptodown.com/android"
+                }
+            ],
+            "manager": true
+        },
+        "com.google.android.youtube": {
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+                }
+            ],
             "manager": true
         }
     }

@@ -4,7 +4,7 @@ LSPatch Generator is an automated tool designed to download and patch Android ap
 
 ## Features
 
-- **Automated Downloads**: Download APKs directly from APKPure or a specified direct URL.
+- **Automated Downloads**: Download APKs from APKPure, APKMirror, Uptodown, archive listings, or direct URLs.
 - **Customizable Patching**: Configure LSPatch flags including:
   - `--manager`
   - `--embed` (using predefined embed modules)
@@ -14,6 +14,8 @@ LSPatch Generator is an automated tool designed to download and patch Android ap
   - `--sigbypasslv`
 - **Concurrent Processing**: Patches multiple applications in parallel with a configurable limit (default: 2).
 - **Automated Workflow**: Combines downloading and patching in a single command.
+- **Source Fallback**: Configure multiple download sources per app (`sources`) and try them in order until one succeeds.
+- **APKS Bundle Merge**: Automatically merges downloaded `.apks` bundles into a patchable single `.apk`.
 
 ## Prerequisites
 
@@ -35,6 +37,7 @@ LSPatch Generator is an automated tool designed to download and patch Android ap
     ```
 
 3.  Ensure you have `lspatch.jar` in the `bin/` directory.
+4.  For split bundles (`.apks`, `.apkm`, `.xapk`), place `apkeditor.jar` in `bin/` (required for merge).
 
 ## Configuration
 
@@ -47,8 +50,16 @@ Create or modify `config.json` in the root directory to define the applications 
 
 #### `Application` Object
 
-- `type`: Either `"apkpure"` (for automated download from APKPure) or `"direct"` (for a manual download URL).
-- `url`: (Optional) The download URL if `type` is `"direct"`.
+- `sources`: Required. Array of download sources to try in order.
+  - source `type`:
+    - `"apkpure"` (automated latest from APKPure using package name key)
+    - `"direct"` (manual direct APK URL)
+    - `"apkmirror"` (APKMirror app page URL)
+    - `"uptodown"` (Uptodown app page URL)
+    - `"archive"` (directory/archive page containing APK files)
+  - source `url`: Required for `direct`, `apkmirror`, `uptodown`, and `archive`.
+  - `archive` note: Intended for archive.org-style directory indexes (for example `.../apks/<package>`). The downloader matches package name and prefers files ending in `-<arch>.apk` (also `.apks/.apkm/.xapk`) like revanced archive selection.
+- `arch`: (Optional) Archive source selection hint. One of `"all"`, `"arm64-v8a"`, `"arm-v7a"` (default: `"all"`).
 - `manager`: (Optional) Boolean. If `true`, uses the `--manager` flag.
 - `embed`: (Optional) An array of keys from the `embeds` section to include.
 - `debuggable`: (Optional) Boolean. If `true`, adds the `--debuggable` flag.
@@ -65,18 +76,52 @@ Create or modify `config.json` in the root directory to define the applications 
     },
     "applications": {
         "com.discord": {
-            "type": "apkpure",
+            "sources": [
+                {
+                    "type": "apkpure"
+                }
+            ],
             "manager": true
         },
+        "com.spotify.music": {
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://archive.org/download/jhc-apks/apks/com.spotify.music"
+                },
+                {
+                    "type": "apkmirror",
+                    "url": "https://www.apkmirror.com/apk/spotify-ab/spotify-music-and-podcasts/"
+                },
+                {
+                    "type": "uptodown",
+                    "url": "https://spotify.en.uptodown.com/android"
+                },
+                {
+                    "type": "apkpure"
+                }
+            ]
+        },
         "com.example.app": {
-            "type": "direct",
-            "url": "https://example.com/app.apk",
+            "sources": [
+                {
+                    "type": "direct",
+                    "url": "https://example.com/app.apk"
+                }
+            ],
             "embed": ["my-module"],
             "debuggable": true
         }
     }
 }
 ```
+
+## Notes
+
+- Source fallback is sequential: the first successful source is used.
+- APKMirror may return 403/HTML challenge pages depending on network/IP.
+- Some Uptodown pages return external installer links (`data-url-ext`) instead of direct APK files.
+- For stable automation, prefer `archive` (archive.org-style file indexes) as the first source when available.
 
 ## Usage
 
