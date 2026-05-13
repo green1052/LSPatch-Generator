@@ -38,3 +38,8 @@ jobs:
           tag_name: ${{ github.run_number }}
           files: |
             output/*
+  
+      - uses: Nats-ji/delete-old-releases@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          keep-count: 1
