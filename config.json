@@ -10,10 +10,10 @@
             ],
             "manager": true
         },
-        "com.reddit.frontpage": {
+        "com.dcinside.app.android": {
             "sources": [
                 {
-                    "type": "u",
+                    "type": "uptodown",
                     "url": "https://dcinside.kr.uptodown.com/android"
                 }
             ],
