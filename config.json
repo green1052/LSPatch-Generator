@@ -1,11 +1,11 @@
 {
     "embeds": {},
     "applications": {
-        "com.spotify.music": {
+        "com.novelpia.android.me": {
             "sources": [
                 {
-                    "type": "apkmirror",
-                    "url": "https://www.apkmirror.com/apk/spotify-ab/spotify-music-and-podcasts/"
+                    "type": "apkpure",
+                    "url": "https://apkpure.com/kr/%EC%9B%B9%EC%86%8C%EC%84%A4-%EB%85%B8%EB%B2%A8%ED%94%BC%EC%95%84/com.novelpia.android.me"
                 }
             ],
             "manager": true
@@ -13,35 +13,8 @@
         "com.reddit.frontpage": {
             "sources": [
                 {
-                    "type": "apkmirror",
-                    "url": "https://www.apkmirror.com/apk/redditinc/reddit/"
-                }
-            ],
-            "manager": true
-        },
-        "org.telegram.messenger": {
-            "sources": [
-                {
-                    "type": "uptodown",
-                    "url": "https://telegram.en.uptodown.com/android"
-                }
-            ],
-            "manager": true
-        },
-        "com.snapchat.android": {
-            "sources": [
-                {
-                    "type": "uptodown",
-                    "url": "https://snapchat.en.uptodown.com/android"
-                }
-            ],
-            "manager": true
-        },
-        "com.google.android.youtube": {
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+                    "type": "u",
+                    "url": "https://dcinside.kr.uptodown.com/android"
                 }
             ],
             "manager": true
