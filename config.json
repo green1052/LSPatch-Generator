@@ -14,7 +14,7 @@
             "sources": [
                 {
                     "type": "uptodown",
-                    "url": "https://dcinside.kr.uptodown.com/android/dw"
+                    "url": "https://dcinside.kr.uptodown.com/android"
                 }
             ],
             "manager": true
