@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "cheerio": "1.2.0",
-        "got": "^15.0.7",
+        "got": "^15.1.0",
         "p-limit": "^7.3.0",
         "tough-cookie": "^6.0.1"
     }
