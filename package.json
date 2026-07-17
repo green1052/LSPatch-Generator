@@ -11,7 +11,7 @@
     "packageManager": "pnpm@11.13.1",
     "devDependencies": {
         "@types/node": "^24.13.3",
-        "typescript": "^6.0.3"
+        "typescript": "^7.0.2"
     },
     "dependencies": {
         "cheerio": "1.2.0",
