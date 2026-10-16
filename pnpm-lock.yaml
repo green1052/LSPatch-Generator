@@ -170,8 +170,8 @@ importers:
         specifier: ^0.6.1
         version: 0.6.1
       camoufox-js:
-        specifier: ^0.12.1
-        version: 0.12.1(playwright-core@1.60.0)
+        specifier: ^0.13.0
+        version: 0.13.0(playwright-core@1.60.0)
       consola:
         specifier: ^3.4.2
         version: 3.4.2
@@ -549,8 +549,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  camoufox-js@0.12.1:
-    resolution: {integrity: sha512-reuAV3wyrEKPorE14mjYCREP46DVrkJHAPSiG4qMnZ1WbB/PcpvCF8A67UM9qkAYD0KcG+VntMC4iomo7nc1VQ==}
+  camoufox-js@0.13.0:
+    resolution: {integrity: sha512-XVT9ErgpLaDyUKA/R/mGsDhiVtcE14TaJHELmKNZxGCCwkXBjFdyx6JG3D2KX+MwdGnfKGWE96otSO3FfVh44w==}
     engines: {node: '>= 22'}
     hasBin: true
     peerDependencies:
@@ -1117,7 +1117,7 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  camoufox-js@0.12.1(playwright-core@1.60.0):
+  camoufox-js@0.13.0(playwright-core@1.60.0):
     dependencies:
       adm-zip: 0.6.1
       better-sqlite3: 13.0.3
